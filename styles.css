@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex; /* Aligns the sections like in the image */
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.black-section {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* Headings in the white section */
+.current-timezone-card h3, .current-timezone-card h2 {
+    color: #333;
+}
+
+/* Headings in the black section */
+.black-section h3, .black-section h2 {
+    color: white;
+}
+
+.data-display p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+/* Address Input Styling */
+#address-input {
+    width: calc(100% - 100px); /* Adjust width for the button */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+#address-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#address-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Error Styling (20 marks for Error Handling) */
+.error-text {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    display: none; /* Initially hidden */
+}
+
+/* Hide the result section initially as per the image requirement */
+#address-result-title, #address-timezone-data {
+    display: none;
+}

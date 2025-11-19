@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timezone API Retrieval</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <div class="container">
+        <div class="card current-timezone-card">
+            <h3>TimeZone API</h3>
+            <h2>Your Current Time Zone</h2>
+            <div class="data-display" id="current-timezone-data">
+                <p><strong>Name Of Time Zone:</strong> <span id="current-tz-name">...</span></p>
+                <p><strong>Lat:</strong> <span id="current-tz-lat">...</span> <strong>Long:</strong> <span id="current-tz-lon">...</span></p>
+                <p><strong>Offset STD:</strong> <span id="current-tz-offset-std">...</span></p>
+                <p><strong>Offset STD Seconds:</strong> <span id="current-tz-offset-std-sec">...</span></p>
+                <p><strong>Offset DST:</strong> <span id="current-tz-offset-dst">...</span></p>
+                <p><strong>Offset DST Seconds:</strong> <span id="current-tz-offset-dst-sec">...</span></p>
+                <p><strong>Country:</strong> <span id="current-tz-country">...</span></p>
+                <p><strong>Postcode:</strong> <span id="current-tz-postcode">...</span></p>
+                <p><strong>City:</strong> <span id="current-tz-city">...</span></p>
+            </div>
+        </div>
+
+        <div class="card enter-address-card black-section">
+            <h2>Enter Address</h2>
+            <form id="address-form">
+                <input type="text" id="address-input" placeholder="e.g., NYC, New York 10001" required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="card address-result-card black-section">
+            <h3 id="address-result-title">Your result</h3>
+            <div class="data-display" id="address-timezone-data">
+                <p><strong>Name Of Time Zone:</strong> <span id="address-tz-name">...</span></p>
+                <p><strong>Lat:</strong> <span id="address-tz-lat">...</span> <strong>Long:</strong> <span id="address-tz-lon">...</span></p>
+                <p><strong>Offset STD:</strong> <span id="address-tz-offset-std">...</span></p>
+                <p><strong>Offset STD Seconds:</strong> <span id="address-tz-offset-std-sec">...</span></p>
+                <p><strong>Offset DST:</strong> <span id="address-tz-offset-dst">...</span></p>
+                <p><strong>Offset DST Seconds:</strong> <span id="address-tz-offset-dst-sec">...</span></p>
+                <p><strong>Country:</strong> <span id="address-tz-country">...</span></p>
+                <p><strong>Postcode:</strong> <span id="address-tz-postcode">...</span></p>
+                <p><strong>City:</strong> <span id="address-tz-city">...</span></p>
+            </div>
+            <p id="error-message" class="error-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>
